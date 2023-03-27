@@ -1,0 +1,17 @@
+---
+version: '3'
+
+includes:
+  docker: ./DockerTasks.yml
+
+tasks:
+  build:
+    cmds:
+      - task: docker:build
+        vars:
+          CONTAINER_IMAGE: {{cookiecutter.container_name}}
+  run:
+    cmds:
+      - task: docker:exec
+        vars:
+          CONTAINER_IMAGE:  {{cookiecutter.container_name}}
