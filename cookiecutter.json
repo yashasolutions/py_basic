@@ -3,5 +3,7 @@
   "project_name": "py_basic",
   "repo_name": "py_basic",
   "project_short_description": "Basic python in a container",
-  "version": "0.1.1"
+  "version": "0.1.1",
+  "container_name": "container_app"
+
 }
